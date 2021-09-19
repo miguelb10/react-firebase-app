@@ -15,7 +15,28 @@ function App() {
           <Route path="/admin" component={Admin}></Route>
           <Route path="/login" component={Login}></Route>
         </Switch>
-      </Router>
+      </Router>  
+      <div className="row">
+        <div className="col">
+          <h2>Formulario de usuarios</h2>
+          <form className="form-group">
+            <input 
+              className="form-control"
+              placeholder="Introdcuce el nombre"
+              type="text"
+            />
+            <input 
+              className="form-control mt-3"
+              placeholder="Introdcuce el numero"
+              type="text"
+            />
+            <input type="submit" value="Registrar" className="btn btn-dark btn-block mt-3" />
+          </form>
+        </div>
+        <div className="col">
+          <h2>Lista de tu agendas</h2>
+        </div>
+      </div>
     </div>
   );
 }
